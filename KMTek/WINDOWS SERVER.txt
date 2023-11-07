@@ -1,0 +1,8 @@
+WINDOWS SERVER
+
+- Check for system update
+- Setup Time Zone
+- Assign Static IP Adress
+- Enable Remote Desktop
+- Rename Server 
+
