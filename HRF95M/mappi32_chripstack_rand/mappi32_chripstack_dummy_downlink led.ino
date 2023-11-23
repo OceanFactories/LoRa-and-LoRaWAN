@@ -1,13 +1,10 @@
-
 #include <lmic.h>
-
-
 #include <hal/hal.h>
 #include <SPI.h>
 
-static const PROGMEM u1_t NWKSKEY[16] = { 0x7A, 0x7E, 0x6E, 0x06, 0x16, 0x68, 0x39, 0x6D, 0xA6, 0x3D, 0x11, 0x97, 0x21, 0xE1, 0x45, 0xB4 };
-static const u1_t PROGMEM APPSKEY[16] = { 0x2B, 0x9D, 0xD8, 0x08, 0x42, 0x38, 0xB9, 0xD2, 0xD8, 0x8D, 0x2C, 0x41, 0x81, 0x3F, 0x21, 0xE9 };
-static const u4_t DEVADDR = 0x002f8990 ; // <-- Change this address for every node!
+static const PROGMEM u1_t NWKSKEY[16] = { FILLMEIN  };// <-- Change this address for every node!
+static const u1_t PROGMEM APPSKEY[16] = { FILLMEIN  };// <-- Change this address for every node!
+static const u4_t DEVADDR = 0xFILLMEIN ; // <-- Change this address for every node!
 
 void os_getArtEui (u1_t* buf) { }
 void os_getDevEui (u1_t* buf) { }
@@ -17,7 +14,7 @@ static osjob_t sendjob;
 
 const unsigned TX_INTERVAL = 30;
 
-// Pin mapping
+// Pin mapping MAPPI32
 const lmic_pinmap lmic_pins = {
   .nss = 15,
   .rxtx = LMIC_UNUSED_PIN,
@@ -26,7 +23,7 @@ const lmic_pinmap lmic_pins = {
 };
 
 
-// Sensor Suhu dan Kelembaban
+// Sensor Suhu dan Kelembaban DUMMY
 //#include <SHT3x.h>
 //SHT3x airSensor;
 float suhu, kelembaban;
