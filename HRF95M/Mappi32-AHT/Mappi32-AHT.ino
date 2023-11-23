@@ -27,9 +27,7 @@ const lmic_pinmap lmic_pins = {
 //AHT10 sensor 
 #include <Adafruit_AHTX0.h>
 Adafruit_AHTX0 aht;
-
 float tem_data = 0, hum_data = 0;
-const int ledPin=32;
 
 // payload
 byte payload[8];
@@ -136,7 +134,6 @@ void setup() {
   Serial.println(F("Starting"));
   Wire.begin();
   aht10_init();
-    pinMode(ledPin, OUTPUT);
 
   SPI.begin(14, 12, 13, 15);
 
