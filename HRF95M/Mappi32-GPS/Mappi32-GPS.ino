@@ -6,9 +6,9 @@
 
 TinyGPSPlus gps;
 
-static const PROGMEM u1_t NWKSKEY[16] = { 0x43, 0x3c, 0x8e, 0x10, 0xd7, 0x4d, 0x5e, 0x63, 0x5b, 0xfd, 0x56, 0xa5, 0x9f, 0xf7, 0xff, 0x6f};
-static const u1_t PROGMEM APPSKEY[16] = { 0x9b, 0x1c, 0xe2, 0xbd, 0xa9, 0x91, 0x8a, 0x6e, 0xaa, 0xf7, 0xd3, 0x22, 0x27, 0x4d, 0x11, 0x5d };
-static const u4_t DEVADDR = 0x00579c06 ; // <-- Change this address for every node!
+static const PROGMEM u1_t NWKSKEY[16] = { FILLMEIN }; <-- Change this address for every node!
+static const u1_t PROGMEM APPSKEY[16] = { FILLMEIN };  <-- Change this address for every node!
+static const u4_t DEVADDR = 0xFILLMEIN ; // <-- Change this address for every node!
 
 void os_getArtEui (u1_t* buf) { }
 void os_getDevEui (u1_t* buf) { }
